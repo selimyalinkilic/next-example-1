@@ -1,5 +1,5 @@
 .product_card{
-   width: 360px;
+   width: calc(25% - 22.5px);
    height: auto;
    display: flex;
    flex-direction: column;
