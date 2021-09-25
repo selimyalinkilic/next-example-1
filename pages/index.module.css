@@ -1,5 +1,6 @@
 .product_list{
-   width: 1530px;
+   width: calc(100% - 128px);
+   max-width: 1320px;
    margin-left: auto;
    margin-right: auto;
    display: flex;
