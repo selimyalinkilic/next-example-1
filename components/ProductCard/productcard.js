@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import styles from './productcard.module.css';
 
-function ProductCard({ id, title, image, price }) {
+function ProductCard({product}) {
+   const {id, title, image, price} = product;
   return (
     <div className={styles.product_card}>
       <Link href="/product/[id]" as={`/product/${id}`}>

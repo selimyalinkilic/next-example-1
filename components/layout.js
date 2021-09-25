@@ -2,7 +2,7 @@ import Navigation from './Navigation/navigation'
 
 function Layout({ children }) {
   return (
-    <div>
+    <div>      
       <Navigation />
       <main>{children}</main>
     </div>
