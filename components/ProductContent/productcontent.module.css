@@ -1,0 +1,29 @@
+.product_detail_container{
+   width: 1320px;
+   margin: 50px auto; 
+   display: flex;
+   justify-content: space-between;
+}
+
+.product_image{
+   width: 600px;
+   height: 600px;
+   overflow: hidden;
+}
+
+.product_image > img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.description{
+   width: 600px;
+   display: flex;
+   flex-direction: column;
+}
+
+.description p{
+   font-size: 16px;
+   line-height: 1.4;
+}

@@ -1,4 +1,4 @@
-import Navigation from './navigation'
+import Navigation from './Navigation/navigation'
 
 function Layout({ children }) {
   return (
