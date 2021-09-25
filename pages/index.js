@@ -1,21 +1,26 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
 import Head from 'next/head';
+import axios from 'axios';
 
 export const getStaticProps = async () => {
   // data fetch  
-  const res = await fetch('https://fakestoreapi.com/products');
-  const data = await res.json();
+  const {data} = await axios.get('https://fakestoreapi.com/products');  
+  
+  if(!data){
+    return {
+      notFound: true,
+    }
+  }
 
   return {
     props: {
-      products: data
+      products: data || {}
     }, // will be passed to the page component as props
   }  
 }
 
-function HomePage({ products }) {  
-  console.log(products);
+function HomePage({ products }) {    
   return (
     <Layout>
       <Head>
