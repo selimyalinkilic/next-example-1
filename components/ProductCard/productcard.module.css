@@ -1,14 +1,9 @@
 .product_card{
-   width: calc(25% - 22.5px);
+   width: calc(25% - 30px);
    height: auto;
    display: flex;
    flex-direction: column;
-   margin-right: 30px;
-   margin-bottom: 30px;
-}
-
-.product_card:nth-child(4n){
-   margin-right: 0;
+   margin: 15px;
 }
 
 .product_card a{
