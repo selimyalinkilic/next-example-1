@@ -13,8 +13,14 @@ function HomePage({ products }) {
       </Head>      
       <div className={styles.product_list}>
         {
-          products.map(product => (
-            <ProductCard key={product.id} product={product} />
+          products.map(({id, title, image, price})  => (
+            <ProductCard 
+              key={id} 
+              id={id}
+              title={title}
+              image={image}
+              price={price}                
+            />
           ))
         }        
       </div>

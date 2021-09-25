@@ -1,19 +1,19 @@
 import Link from 'next/link';
 import styles from './productcard.module.css';
 
-function ProductCard({ product }) {
+function ProductCard({ id, title, image, price }) {
   return (
     <div className={styles.product_card}>
-      <Link href="/product/[id]" as={`/product/${product.id}`}>
+      <Link href="/product/[id]" as={`/product/${id}`}>
          <a rel="noferrerer">
             <div className={styles.image_container}>
-               <img src={product.image} alt={product.title} />
+               <img src={image} alt={title} />
             </div>
             <div className={styles.description}>
                <div className={styles.product_title}>                  
-                  <h3>{product.title}</h3>
+                  <h3>{title}</h3>
                </div>
-               <span className={styles.price}>{product.price}</span>
+               <span className={styles.price}>{price}</span>
             </div>            
          </a>         
       </Link>
